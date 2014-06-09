@@ -320,9 +320,7 @@ public class XRItems {
                 'm', gunPart(1, 2), 'g', gunPart(1, 0), 's', Item.slimeBall });
 
         // tome
-        ItemStack tombStack = new ItemStack(alkahestryTome, 1, 0);
-        tombStack.setItemDamage(Config.tombRedstoneLimit);
-        GameRegistry.addShapelessRecipe(tombStack,
+        GameRegistry.addShapelessRecipe(new ItemStack(alkahestryTome, 1, 0),
                 new Object[] { Item.book, Item.blazeRod, Item.magmaCream,
                         Item.ingotGold, Block.glowStone, Item.netherStalkSeeds,
                         new ItemStack(Item.skull, 1, 1), Item.ghastTear,
