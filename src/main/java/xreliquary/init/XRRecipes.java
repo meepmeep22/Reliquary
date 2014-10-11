@@ -225,6 +225,9 @@ public class XRRecipes {
         // serpent staff
         addRecipe(false, new ItemStack(ContentHandler.getItem(Names.serpent_staff), 1), "oeo", "sks", " s ", 'o', Blocks.obsidian, 'e', Items.ender_eye, 's', Items.stick, 'k', ContentHandler.getItem(Names.kraken_shell));
 
+        // infernal tear
+        addRecipe(false, new ItemStack(ContentHandler.getItem(Names.infernal_tear), 1, 0), "cmc", "mtm", "clc", 'c', Items.coal, 'm', Items.magma_cream, 't', new ItemStack(ContentHandler.getItem(Names.void_tear), 1, 0), 'l', Items.lava_bucket);
+
 		/* potions and splash potions */
 
         // empty vial
