@@ -17,7 +17,5 @@ public class PacketHandler {
 
 		int idx = 0;
 		networkWrapper.registerMessage(PacketFXThrownPotionImpact.class, PacketFXThrownPotionImpact.class, idx, Side.CLIENT);
-		idx++;
-		networkWrapper.registerMessage(PacketHarvestRodExtPropsSync.class, PacketHarvestRodExtPropsSync.class, idx, Side.CLIENT);
 	}
 }

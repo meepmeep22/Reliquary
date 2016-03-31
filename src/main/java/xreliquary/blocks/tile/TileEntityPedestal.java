@@ -144,7 +144,7 @@ public class TileEntityPedestal extends TileEntityInventory implements IPedestal
 
 	@Override
 	public void update() {
-		if(isPowered() && tickable && !worldObj.isRemote) {
+		if(tickable && !worldObj.isRemote) {
 			for(currentItemIndex = 0; currentItemIndex < inventory.length; currentItemIndex++) {
 				if(actionCooldowns[currentItemIndex] > 0) {
 					actionCooldowns[currentItemIndex]--;
@@ -405,9 +405,5 @@ public class TileEntityPedestal extends TileEntityInventory implements IPedestal
 		}
 
 		return tankInfo;
-	}
-
-	private boolean isPowered() {
-		return worldObj.isBlockPowered(pos);
 	}
 }
